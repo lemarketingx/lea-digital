@@ -40,7 +40,6 @@ img {
   --turquoise: #2FD3D8;
   --turquoise-2: #16BFC4;
   --indigo: #7C84FF;
-  --amber: #F2B953;
   --border-1: rgba(255,255,255,0.07);
   --border-2: rgba(255,255,255,0.08);
   --border-3: rgba(255,255,255,0.1);
@@ -318,7 +317,6 @@ img {
 .brand-chip .dot--turquoise { background: var(--turquoise); }
 .brand-chip .dot--indigo { background: var(--indigo); }
 .brand-chip .dot--muted { background: var(--text-dim-5); }
-.brand-chip .dot--amber { background: var(--amber); }
 
 .brand-chip .name {
   font-family: 'Heebo', sans-serif;
@@ -548,14 +546,6 @@ img {
 }
 
 .status-pill--soon .dot { background: var(--text-dim-5); }
-
-.status-pill--ready {
-  color: var(--amber);
-  background: rgba(242,185,83,0.1);
-  border: 1px solid rgba(242,185,83,0.28);
-}
-
-.status-pill--ready .dot { background: var(--amber); }
 
 .featured-brand__desc {
   font-size: 16px;
