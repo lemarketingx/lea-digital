@@ -1,226 +1,320 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="he" dir="rtl">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>ל.א.ה דיגיטל | בונים נכסים דיגיטליים</title>
-    <meta
-      name="description"
-      content="ל.א.ה דיגיטל בונה ומפתחת נכסים דיגיטליים: פלטפורמות, מחשבונים ומערכות שמטרתם לייצר לידים, הכנסה, דאטה ושווי עתידי."
-    />
-    <meta property="og:title" content="ל.א.ה דיגיטל | בונים נכסים דיגיטליים" />
-    <meta
-      property="og:description"
-      content="פיתוח נכסים דיגיטליים רזים, מדידים וברורים עסקית: פלטפורמות, מחשבונים ומערכות שמייצרות ערך."
-    />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="/assets/og-image.svg" />
-    <meta name="theme-color" content="#070a12" />
-    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="/styles.css" />
-  </head>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ל.א.ה דיגיטל — בונים ומתפעלים מותגי דיגיטל שעובדים</title>
+<meta name="description" content="ל.א.ה דיגיטל היא חברת אם שבונה ומתפעלת פלטפורמות אונליין כמו FINZO — מהרעיון, דרך הבנייה והשיווק, ועד תפעול שוטף שמייצר לידים, תנועה ותוצאות.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800;900&family=Assistant:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./styles.css">
+</head>
+<body>
 
-  <body>
-    <header class="site-header" aria-label="סרגל ניווט ראשי">
-      <div class="header-shell">
-      <a class="brand" href="#top" aria-label="ל.א.ה דיגיטל">
-        <img src="/assets/logo.svg" alt="ל.א.ה דיגיטל" width="148" height="52" />
+  <!-- ============ NAV (centered tabs) ============ -->
+  <header class="site-header">
+    <div class="wrap">
+      <a href="#top" class="logo">
+        <span>ל</span><span class="dot dot--turquoise"></span><span>א</span><span class="dot dot--indigo"></span><span>ה</span>
+        <span class="brand-suffix">דיגיטל</span>
       </a>
-
-      <nav class="nav" aria-label="ניווט באתר">
-        <a href="#why">למה זה קיים</a>
-        <a href="#assets">נכסים</a>
-        <a href="#method">שיטה</a>
-        <a href="#contact" class="nav-cta">יצירת קשר</a>
+      <nav class="nav-pill">
+        <a href="#brands">הנכסים שלנו</a>
+        <a href="#what">מה אנחנו עושים</a>
+        <a href="#model">המודל</a>
+        <a href="#numbers">במספרים</a>
       </nav>
+      <a href="#contact" class="nav-cta">דברו איתנו</a>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section id="top" class="hero section-border">
+    <div class="hero__glow-top"></div>
+    <div class="hero__glow-bottom"></div>
+
+    <div class="wrap">
+      <div class="hero__badge">
+        <span class="pulse-dot">
+          <span class="pulse-dot__ring"></span>
+          <span class="pulse-dot__core"></span>
+        </span>
+        <span class="hero__badge-text">חברת אם לבניית ותפעול מותגי דיגיטל</span>
       </div>
-    </header>
 
-    <main id="top">
-      <section class="hero" aria-labelledby="hero-title">
-        <div class="hero-backdrop" aria-hidden="true"></div>
+      <h1>בונים ומתפעלים<br>מותגי דיגיטל ש<span class="accent">עובדים</span>.</h1>
+      <p class="hero__lead">ל.א.ה דיגיטל היא הבית שמאחורי פלטפורמות אונליין כמו FINZO — מהרעיון, דרך הבנייה והשיווק, ועד תפעול שוטף שמייצר לידים, תנועה ותוצאות.</p>
+      <div class="hero__actions">
+        <a href="#brands" class="btn btn--white">לנכסים שאנחנו מפעילים</a>
+        <a href="#contact" class="btn btn--ghost">שיתוף פעולה</a>
+      </div>
 
-        <div class="hero-shell">
-          <div class="brand-stage" aria-label="ל.א.ה דיגיטל">
-            <img src="/assets/logo-mark.svg" alt="ל.א.ה דיגיטל" width="760" height="260" />
-          </div>
-
-          <div class="hero-copy">
-            <p class="eyebrow">סטודיו נכסים דיגיטליים</p>
-            <h1 id="hero-title">בונים רעיונות דיגיטליים שהופכים לנכסים.</h1>
-            <p>
-              ל.א.ה דיגיטל מפתחת פלטפורמות, מחשבונים ומערכות שמטרתם לייצר ביקוש,
-              לידים, הכנסה, דאטה ושווי עסקי שאפשר למדוד.
-            </p>
-
-            <div class="hero-actions" aria-label="פעולות מרכזיות">
-              <a class="button primary" href="#contact">בדיקת שיתוף פעולה</a>
-              <a class="button ghost" href="#assets">הנכסים שלנו</a>
-            </div>
-          </div>
+      <!-- floating brand chips -->
+      <div class="brand-chips">
+        <div class="brand-chip">
+          <span class="dot dot--turquoise"></span>
+          <span class="name">FINZO</span>
+          <span class="status">· פעיל</span>
         </div>
-      </section>
-
-      <section id="why" class="section light-section" aria-labelledby="why-title">
-        <div class="section-shell split">
-          <div class="section-title">
-            <p class="eyebrow">למה זה קיים</p>
-            <h2 id="why-title">לא עוד אתר יפה. נכס עסקי עם תפקיד ברור.</h2>
-          </div>
-          <div class="text-panel">
-            <p>
-              רוב המיזמים הדיגיטליים נתקעים בשלב שבו הכול נראה מרשים, אבל אין מדידה,
-              אין ביקוש מוכח ואין דרך ברורה להפוך את העבודה לשווי. ל.א.ה דיגיטל נבנית
-              הפוך: קודם מטרה עסקית, אחר כך מוצר.
-            </p>
-            <div class="mini-grid">
-              <article>
-                <strong>01</strong>
-                <span>מגדירים יעד עסקי לפני עיצוב וקוד.</span>
-              </article>
-              <article>
-                <strong>02</strong>
-                <span>בונים גרסה רזה שאפשר להוציא לשוק.</span>
-              </article>
-              <article>
-                <strong>03</strong>
-                <span>מודדים ביקוש ומחליטים לפי נתונים.</span>
-              </article>
-            </div>
-          </div>
+        <div class="brand-chip">
+          <span class="dot dot--indigo"></span>
+          <span class="name name--dim">נכס נוסף</span>
+          <span class="status">· בפיתוח</span>
         </div>
-      </section>
-
-      <section id="assets" class="section assets-section" aria-labelledby="assets-title">
-        <div class="section-shell">
-          <div class="section-head center">
-            <p class="eyebrow">הנכסים שלנו</p>
-            <h2 id="assets-title">פורטפוליו קטן, חד וממוקד הכנסה.</h2>
-            <p>
-              כל נכס נבחן לפי צורך אמיתי, יכולת מדידה, פוטנציאל הכנסה ושווי עתידי.
-              בלי הבטחות ריקות. בלי רעש. רק נכסים שאפשר לבנות, לבדוק ולשפר.
-            </p>
-          </div>
-
-          <div class="asset-showcase">
-            <article class="flagship-card">
-              <div class="flagship-content">
-                <span class="pill">נכס דגל</span>
-                <h3>FINZO</h3>
-                <p>
-                  פלטפורמה בתחום המשכנתאות שמחברת בין משתמשים ליועצי משכנתאות,
-                  עם מחשבון, תהליך לידים וכלים דיגיטליים שמיועדים למדידה ושיפור.
-                </p>
-                <a class="button primary" href="https://www.finzo.co.il" target="_blank" rel="noopener">מעבר ל־FINZO</a>
-
-                <dl class="asset-facts" aria-label="פרטי נכס FINZO">
-                <div>
-                  <dt>תחום</dt>
-                  <dd>משכנתאות</dd>
-                </div>
-                <div>
-                  <dt>סוג נכס</dt>
-                  <dd>פלטפורמה וכלים דיגיטליים</dd>
-                </div>
-                <div>
-                  <dt>מיקוד</dt>
-                  <dd>לידים, דאטה ושימושיות</dd>
-                </div>
-                </dl>
-              </div>
-
-              <div class="asset-visual" aria-label="אזור לוגו FINZO">
-              <div class="finzo-placeholder">
-                <span aria-hidden="true">⌁</span>
-                <p>כאן יוצג לוגו FINZO</p>
-              </div>
-              </div>
-            </article>
-
-            <article class="future-card">
-              <span class="pill muted">בפיתוח עתידי</span>
-              <h3>נכסים נוספים</h3>
-              <p>
-                מחשבונים, אתרי נישה, מערכות תוכן ופלטפורמות קטנות שייבחנו לפי
-                פוטנציאל עסקי ולא לפי התלהבות רגעית.
-              </p>
-            </article>
-          </div>
+        <div class="brand-chip">
+          <span class="dot dot--muted"></span>
+          <span class="name name--dim">בקרוב</span>
         </div>
-      </section>
+      </div>
+    </div>
+  </section>
 
-      <section id="method" class="section dark-section" aria-labelledby="method-title">
-        <div class="section-shell">
-          <div class="section-head">
-            <p class="eyebrow">שיטת העבודה</p>
-            <h2 id="method-title">מחשבה עסקית, בנייה רזה, החלטה קרה.</h2>
-            <p>
-              נכס דיגיטלי טוב לא נמדד בכמות המסכים שלו. הוא נמדד ביכולת להוכיח שיש
-              ביקוש, שימוש וערך שאפשר להגדיל.
-            </p>
-          </div>
-
-          <ol class="process">
-            <li>
-              <span>בדיקת כדאיות</span>
-              <p>מגדירים שוק, משתמש, כאב, הצעת ערך וסימן ביקוש ראשוני.</p>
-            </li>
-            <li>
-              <span>גרסה ראשונה</span>
-              <p>בונים מוצר קטן ונקי שמספיק כדי לבדוק תגובה אמיתית.</p>
-            </li>
-            <li>
-              <span>מדידה ושיפור</span>
-              <p>בודקים פניות, הרשמות, שימוש, איכות דאטה ועלות הגעה למשתמש.</p>
-            </li>
-            <li>
-              <span>החלטה עסקית</span>
-              <p>ממשיכים, משפרים, משנים כיוון או סוגרים לפי הנתונים.</p>
-            </li>
-          </ol>
-        </div>
-      </section>
-
-      <section class="section partners-section" aria-labelledby="partners-title">
-        <div class="section-shell partners-card">
-          <div>
-            <p class="eyebrow">שיתופי פעולה</p>
-            <h2 id="partners-title">מחפשים נכס דיגיטלי שאפשר לבנות נכון?</h2>
-          </div>
-          <p>
-            אפשר לפנות לגבי רעיון למיזם, שיתוף פעולה, בדיקת כדאיות או עניין עסקי
-            באחד הנכסים של ל.א.ה דיגיטל.
-          </p>
-        </div>
-      </section>
-
-      <section id="contact" class="section-shell contact" aria-labelledby="contact-title">
+  <!-- ============ BRANDS / PORTFOLIO ============ -->
+  <section id="brands" class="brands section-border">
+    <div class="wrap">
+      <div class="section-head">
         <div>
-          <p class="eyebrow">יצירת קשר</p>
-          <h2 id="contact-title">שיחה קצרה. בדיקה חדה.</h2>
-          <p>
-            האתר מוכן לחיבור מייל ווואטסאפ רשמיים. עד אז, אזור הפנייה נשאר מסודר
-            ונקי בלי להציג פרטים לא מאושרים.
-          </p>
+          <div class="eyebrow">הנכסים שאנחנו מפעילים</div>
+          <h2>מותגים שאנחנו בונים ומתפעלים</h2>
         </div>
+        <p>כל נכס הוא פלטפורמה עצמאית — עם קהל, תנועה ומודל הכנסה משלה.</p>
+      </div>
 
-        <div class="contact-box">
-          <a class="button primary full" href="mailto:REPLACE_WITH_REAL_EMAIL">שליחת פנייה עסקית</a>
-          <a class="button outline full" href="https://wa.me/REPLACE_WITH_PHONE" target="_blank" rel="noopener">
-            פתיחת שיחה בוואטסאפ
-          </a>
-          <p class="contact-note">יש להחליף את פרטי הקשר לפני פרסום האתר לציבור.</p>
+      <!-- FEATURED: FINZO -->
+      <div class="featured-brand">
+        <div class="browser-frame">
+          <div class="browser-frame__bar">
+            <span class="browser-frame__dot"></span>
+            <span class="browser-frame__dot"></span>
+            <span class="browser-frame__dot"></span>
+            <span class="browser-frame__url">finzo.co.il</span>
+          </div>
+          <div class="shot-placeholder">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+            <span>תצוגת FINZO תתווסף כאן</span>
+          </div>
         </div>
-      </section>
-    </main>
+        <div class="featured-brand__info">
+          <div class="featured-brand__title-row">
+            <span class="name">FINZO</span>
+            <span class="status-pill status-pill--live"><span class="dot"></span>פעיל</span>
+          </div>
+          <p class="featured-brand__desc">פלטפורמת פינטק להשוואה וקבלת מוצרים פיננסיים. אנחנו אחראים על כל שרשרת הערך — מוצר, שיווק, תוכן, אוטומציה וניהול לידים.</p>
+          <div class="tag-row">
+            <span class="tag">פינטק</span>
+            <span class="tag">יצירת לידים</span>
+            <span class="tag">אוטומציה</span>
+          </div>
+          <a href="#contact" class="btn btn--turquoise">לצפייה בפלטפורמה <span>←</span></a>
+        </div>
+      </div>
 
-    <footer class="footer">
-      <span>© <span id="year"></span> ל.א.ה דיגיטל</span>
-      <span>בונים נכסים דיגיטליים מדידים.</span>
-    </footer>
+      <!-- two more slots -->
+      <div class="brand-grid">
+        <div class="brand-card">
+          <div class="brand-card__shot browser-frame browser-frame--sm">
+            <div class="browser-frame__bar">
+              <span class="browser-frame__dot"></span>
+              <span class="browser-frame__dot"></span>
+              <span class="browser-frame__dot"></span>
+            </div>
+            <div class="shot-placeholder shot-placeholder--sm">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+              <span>תצוגה תתווסף כאן</span>
+            </div>
+          </div>
+          <div class="brand-card__meta">
+            <div>
+              <div class="brand-card__name">נכס נוסף</div>
+              <div class="brand-card__sub">פלטפורמת דיגיטל · בפיתוח</div>
+            </div>
+            <span class="status-pill status-pill--dev"><span class="dot"></span>בפיתוח</span>
+          </div>
+        </div>
+        <div class="brand-card">
+          <div class="brand-card__shot browser-frame browser-frame--sm">
+            <div class="browser-frame__bar">
+              <span class="browser-frame__dot"></span>
+              <span class="browser-frame__dot"></span>
+              <span class="browser-frame__dot"></span>
+            </div>
+            <div class="shot-placeholder shot-placeholder--sm">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+              <span>תצוגה תתווסף כאן</span>
+            </div>
+          </div>
+          <div class="brand-card__meta">
+            <div>
+              <div class="brand-card__name">נכס עתידי</div>
+              <div class="brand-card__sub">בקרוב</div>
+            </div>
+            <span class="status-pill status-pill--soon"><span class="dot"></span>בקרוב</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <script>
-      document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
-  </body>
+  <!-- ============ WHAT WE DO ============ -->
+  <section id="what" class="what section-border">
+    <div class="wrap">
+      <div class="section-head section-head--center">
+        <div class="eyebrow">מה אנחנו עושים</div>
+        <h2>בית שמחזיק את כל השרשרת</h2>
+        <p>לא רק בונים אתר — מתפעלים מותג דיגיטל שלם, לאורך זמן.</p>
+      </div>
+      <div class="card-grid">
+        <div class="feature-card">
+          <div class="feature-card__dot feature-card__dot--turquoise"></div>
+          <h3>בונים</h3>
+          <p>אתרים, דפי נחיתה ופלטפורמות אונליין — מהיר, נקי ובנוי להמרה.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__dot feature-card__dot--indigo"></div>
+          <h3>משווקים</h3>
+          <p>קמפיינים, תוכן ויצירת לידים איכותיים שמזרימים תנועה רלוונטית.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__dot feature-card__dot--turquoise"></div>
+          <h3>מפתחים</h3>
+          <p>מערכות חכמות ואוטומציות שמחברות בין לקוחות, ספקים ובעלי מקצוע.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__dot feature-card__dot--indigo"></div>
+          <h3>מתפעלים</h3>
+          <p>ניהול שוטף מקצה לקצה — תוכן, לידים, שירות ושיפור מתמיד.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__dot feature-card__dot--turquoise"></div>
+          <h3>מודדים</h3>
+          <p>דאטה על כל צעד — יעיל, מדיד ושקוף, בלי ניחושים.</p>
+        </div>
+        <div class="feature-card feature-card--accent">
+          <div class="feature-card__dots">
+            <div class="feature-card__dot feature-card__dot--turquoise"></div>
+            <div class="feature-card__dot feature-card__dot--indigo"></div>
+          </div>
+          <h3>מצמיחים</h3>
+          <p>מגדילים כל נכס לאורך זמן — עוד תנועה, עוד המרות, עוד ערך.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MODEL ============ -->
+  <section id="model" class="model section-border">
+    <div class="wrap">
+      <div class="model__card">
+        <div class="model__monogram">
+          <span>ל</span>
+          <span class="signal-dot signal-dot--turquoise"></span>
+          <span>א</span>
+          <span class="signal-dot signal-dot--indigo"></span>
+          <span>ה</span>
+        </div>
+        <div class="model__flow">
+          <span>קהל ותנועה</span>
+          <span class="model__flow-line"></span>
+          <span>ערך עסקי</span>
+        </div>
+        <p class="model__caption">הנקודה שבין האותיות היא נקודת החיבור — בין קהל, דאטה ותוצאה.</p>
+      </div>
+      <div class="model__content">
+        <div class="eyebrow">המודל</div>
+        <h2>חברת אם, לא סוכנות פרויקטים</h2>
+        <p>אנחנו לא מספקים "פרויקט ונעלמים". אנחנו בעלי הנכסים — ולכן כל החלטה נמדדת בתוצאה אמיתית לאורך זמן. אותה חשיבה בדיוק עומדת לרשות שותפים ולקוחות שרוצים לבנות נוכחות דיגיטלית רצינית.</p>
+        <div class="model__list">
+          <div class="model__item">
+            <div class="model__item-dot model__item-dot--turquoise"></div>
+            <div>
+              <div class="model__item-title">בעלות ואחריות מלאה</div>
+              <div class="model__item-desc">אנחנו מתפעלים את מה שאנחנו בונים — לטווח ארוך.</div>
+            </div>
+          </div>
+          <div class="model__item">
+            <div class="model__item-dot model__item-dot--indigo"></div>
+            <div>
+              <div class="model__item-title">חשיבה של מוצר</div>
+              <div class="model__item-desc">כל נכס נבנה כדי לצמוח, לא רק להיראות טוב.</div>
+            </div>
+          </div>
+          <div class="model__item">
+            <div class="model__item-dot model__item-dot--turquoise"></div>
+            <div>
+              <div class="model__item-title">שקיפות מלאה בדאטה</div>
+              <div class="model__item-desc">רואים בדיוק מה עובד, כמה זה עולה וכמה זה מחזיר.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ NUMBERS ============ -->
+  <section id="numbers" class="numbers section-border">
+    <div class="wrap">
+      <div class="stats-grid">
+        <div>
+          <div class="stat__value">1<span class="accent-turquoise">+</span></div>
+          <div class="stat__label">פלטפורמות פעילות</div>
+        </div>
+        <div>
+          <div class="stat__value">+38<span class="accent-turquoise">%</span></div>
+          <div class="stat__label">גידול ממוצע בלידים</div>
+        </div>
+        <div>
+          <div class="stat__value">24<span class="accent-indigo">/7</span></div>
+          <div class="stat__label">אוטומציות שרצות לבד</div>
+        </div>
+        <div>
+          <div class="stat__value">100<span class="accent-turquoise">%</span></div>
+          <div class="stat__label">שקיפות בדיווח</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA ============ -->
+  <section id="contact" class="cta">
+    <div class="wrap">
+      <div class="cta__panel">
+        <div class="cta__glow-top"></div>
+        <div class="cta__glow-bottom"></div>
+        <div class="cta__grid">
+          <div>
+            <h2>רוצים לבנות נכס<br>דיגיטלי שעובד?</h2>
+            <p>בין אם אתם שותפים פוטנציאליים ובין אם עסק שרוצה נוכחות דיגיטלית רצינית — נשמח לדבר. שיחת היכרות ראשונה, ללא עלות.</p>
+          </div>
+          <div class="cta__actions">
+            <a href="#top" class="btn btn--white">קבעו שיחה</a>
+            <a href="#top" class="btn btn--ghost">וואטסאפ</a>
+            <div class="cta__contact-line">050-000-0000 · hello@lah-digital.co.il</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="wrap">
+      <div>
+        <div class="footer-logo">
+          <span>ל</span><span class="dot dot--turquoise"></span><span>א</span><span class="dot dot--indigo"></span><span>ה</span>
+          <span class="brand-suffix">דיגיטל</span>
+        </div>
+        <div class="footer-tagline">בונים ומתפעלים מותגי דיגיטל שעובדים.</div>
+      </div>
+      <div class="footer-links">
+        <a href="#brands">הנכסים שלנו</a>
+        <a href="#what">מה אנחנו עושים</a>
+        <a href="#model">המודל</a>
+        <a href="#contact">צור קשר</a>
+      </div>
+      <div class="footer-copy">© 2026 ל.א.ה דיגיטל · כל הזכויות שמורות</div>
+    </div>
+  </footer>
+
+</body>
 </html>
