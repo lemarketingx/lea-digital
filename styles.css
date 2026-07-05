@@ -612,6 +612,10 @@ img {
   gap: 16px;
 }
 
+.card-grid--4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
 .feature-card {
   background: var(--card);
   border: 1px solid var(--border-2);
@@ -900,7 +904,6 @@ img {
   color: var(--text-dim-4);
   text-align: center;
   margin-top: 6px;
-  direction: ltr;
 }
 
 /* ============ Footer ============ */
