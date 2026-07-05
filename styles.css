@@ -477,6 +477,20 @@ img {
   font-weight: 500;
 }
 
+.shot-placeholder--logo {
+  background: #F4F5F9;
+  gap: 16px;
+}
+
+.shot-placeholder__logo {
+  max-width: 55%;
+  height: auto;
+}
+
+.shot-placeholder--logo span {
+  color: #7A7E8C;
+}
+
 .featured-brand__info {
   padding: 16px 24px;
 }
