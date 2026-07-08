@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="he" dir="rtl">
 <head>
+<script>document.documentElement.classList.add('js');</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>ל.א.ה דיגיטל - בית לנכסים דיגיטליים מדידים</title>
@@ -43,6 +44,20 @@
         <a href="#criteria">מה נחשב נכס טוב</a>
       </nav>
       <a href="#contact" class="nav-cta">דברו איתנו</a>
+
+      <div class="mobile-nav-toggle">
+        <input type="checkbox" id="nav-toggle" class="nav-toggle-input" aria-label="פתיחת תפריט ניווט">
+        <label for="nav-toggle" class="nav-toggle-btn" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </label>
+        <nav class="mobile-nav" aria-label="ניווט נייד">
+          <a href="#brands">הנכסים שלנו</a>
+          <a href="#what">מה אנחנו עושים</a>
+          <a href="#model">המודל</a>
+          <a href="#criteria">מה נחשב נכס טוב</a>
+          <a href="#contact" class="mobile-nav__cta">דברו איתנו</a>
+        </nav>
+      </div>
     </div>
   </header>
 
@@ -91,7 +106,7 @@
   <!-- ============ BRANDS / PORTFOLIO ============ -->
   <section id="brands" class="brands section-border">
     <div class="wrap">
-      <div class="section-head">
+      <div class="section-head reveal-on-scroll">
         <div>
           <div class="eyebrow">הנכסים שלנו</div>
           <h2>נכסים דיגיטליים שאנחנו בונים ומפעילים</h2>
@@ -100,7 +115,7 @@
       </div>
 
       <!-- FEATURED: FINZO -->
-      <div class="featured-brand">
+      <div class="featured-brand reveal-on-scroll">
         <div class="browser-frame">
           <div class="browser-frame__bar">
             <span class="browser-frame__dot"></span>
@@ -131,7 +146,7 @@
 
       <!-- two more slots -->
       <div class="brand-grid">
-        <div class="brand-card">
+        <div class="brand-card reveal-on-scroll">
           <div class="brand-card__shot browser-frame browser-frame--sm">
             <div class="browser-frame__bar">
               <span class="browser-frame__dot"></span>
@@ -158,7 +173,7 @@
             <span class="tag">מאגר ספקים</span>
           </div>
         </div>
-        <div class="brand-card">
+        <div class="brand-card reveal-on-scroll">
           <div class="brand-card__shot browser-frame browser-frame--sm">
             <div class="browser-frame__bar">
               <span class="browser-frame__dot"></span>
@@ -185,38 +200,38 @@
   <!-- ============ WHAT WE DO ============ -->
   <section id="what" class="what section-border">
     <div class="wrap">
-      <div class="section-head section-head--center">
+      <div class="section-head section-head--center reveal-on-scroll">
         <div class="eyebrow">מה אנחנו עושים</div>
         <h2>מאתרים צורך, בונים נכס, מודדים תוצאה</h2>
         <p>אנחנו בונים נכסים דיגיטליים סביב צורך עסקי ברור, ומשפרים אותם לפי ביקוש, שימוש, דאטה ותוצאה.</p>
       </div>
       <div class="card-grid">
-        <div class="feature-card">
+        <div class="feature-card reveal-on-scroll">
           <div class="feature-card__dot feature-card__dot--turquoise"></div>
           <h3>מאתרים צורך</h3>
           <p>בודקים תחום, קהל יעד, כאב ברור ואפשרות לייצר ביקוש אמיתי.</p>
         </div>
-        <div class="feature-card">
+        <div class="feature-card reveal-on-scroll">
           <div class="feature-card__dot feature-card__dot--indigo"></div>
           <h3>בונים מוצר רזה</h3>
           <p>מפתחים גרסה ראשונה ממוקדת שאפשר להשיק, לבדוק ולשפר.</p>
         </div>
-        <div class="feature-card">
+        <div class="feature-card reveal-on-scroll">
           <div class="feature-card__dot feature-card__dot--turquoise"></div>
           <h3>מייצרים ביקוש</h3>
           <p>מחברים תוכן, תנועה ולידים כדי לבדוק אם השוק מגיב בפועל.</p>
         </div>
-        <div class="feature-card">
+        <div class="feature-card reveal-on-scroll">
           <div class="feature-card__dot feature-card__dot--indigo"></div>
           <h3>מודדים דאטה</h3>
           <p>בודקים שימוש, פניות, איכות לידים ועלות הגעה למשתמש רלוונטי.</p>
         </div>
-        <div class="feature-card">
+        <div class="feature-card reveal-on-scroll">
           <div class="feature-card__dot feature-card__dot--turquoise"></div>
           <h3>משביחים נכס</h3>
           <p>משפרים את המוצר, התוכן והתהליך כדי להגדיל ערך לאורך זמן.</p>
         </div>
-        <div class="feature-card feature-card--accent">
+        <div class="feature-card feature-card--accent reveal-on-scroll">
           <div class="feature-card__dots">
             <div class="feature-card__dot feature-card__dot--turquoise"></div>
             <div class="feature-card__dot feature-card__dot--indigo"></div>
@@ -231,7 +246,7 @@
   <!-- ============ MODEL ============ -->
   <section id="model" class="model section-border">
     <div class="wrap">
-      <div class="model__card">
+      <div class="model__card reveal-on-scroll">
         <div class="model__monogram">
           <span>ל</span>
           <span class="signal-dot signal-dot--turquoise"></span>
@@ -246,7 +261,7 @@
         </div>
         <p class="model__caption">הנקודה שבין האותיות היא נקודת החיבור — בין קהל, דאטה ותוצאה.</p>
       </div>
-      <div class="model__content">
+      <div class="model__content reveal-on-scroll">
         <div class="eyebrow">המודל</div>
         <h2>חברת אם, לא סוכנות פרויקטים</h2>
         <p>אנחנו לא בונים פרויקט ונעלמים. אנחנו חושבים כמו בעלי נכס: מה מייצר ביקוש, מה אפשר למדוד, ומה יכול להפוך לשווי לאורך זמן. כל נכס יכול להמשיך לפעול תחת ל.א.ה דיגיטל, להפוך לשיתוף פעולה או להימכר לגורם מתאים.</p>
@@ -280,26 +295,26 @@
   <!-- ============ CRITERIA ============ -->
   <section id="criteria" class="numbers section-border">
     <div class="wrap">
-      <div class="section-head section-head--center">
+      <div class="section-head section-head--center reveal-on-scroll">
         <h2>מה נחשב נכס טוב?</h2>
       </div>
       <div class="card-grid card-grid--4">
-        <div class="feature-card">
+        <div class="feature-card reveal-on-scroll">
           <div class="feature-card__dot feature-card__dot--turquoise"></div>
           <h3>צורך ברור</h3>
           <p>יש קהל עם בעיה אמיתית ולא רק רעיון שנשמע מעניין.</p>
         </div>
-        <div class="feature-card">
+        <div class="feature-card reveal-on-scroll">
           <div class="feature-card__dot feature-card__dot--indigo"></div>
           <h3>יכולת מדידה</h3>
           <p>אפשר למדוד פניות, שימוש, איכות לידים או עניין עסקי.</p>
         </div>
-        <div class="feature-card">
+        <div class="feature-card reveal-on-scroll">
           <div class="feature-card__dot feature-card__dot--turquoise"></div>
           <h3>תפעול פשוט</h3>
           <p>הנכס לא תלוי בעבודה ידנית כבדה כדי להמשיך לפעול.</p>
         </div>
-        <div class="feature-card">
+        <div class="feature-card reveal-on-scroll">
           <div class="feature-card__dot feature-card__dot--indigo"></div>
           <h3>שווי עתידי</h3>
           <p>יש אפשרות להחזיק, להשביח, לשתף פעולה או למכור את הנכס בהמשך.</p>
@@ -311,7 +326,7 @@
   <!-- ============ CTA ============ -->
   <section id="contact" class="cta">
     <div class="wrap">
-      <div class="cta__panel">
+      <div class="cta__panel reveal-on-scroll">
         <div class="cta__glow-top"></div>
         <div class="cta__glow-bottom"></div>
         <div class="cta__grid">
@@ -352,5 +367,56 @@
     </div>
   </footer>
 
+  <script>
+    (function () {
+      var toggle = document.getElementById('nav-toggle');
+      if (toggle) {
+        document.querySelectorAll('.mobile-nav a').forEach(function (link) {
+          link.addEventListener('click', function () {
+            toggle.checked = false;
+          });
+        });
+      }
+
+      var revealEls = Array.prototype.slice.call(document.querySelectorAll('.reveal-on-scroll'));
+      if (!revealEls.length) { return; }
+
+      function revealIfVisible(el) {
+        if (el.classList.contains('is-visible')) { return; }
+        var rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight && rect.bottom > 0) {
+          el.classList.add('is-visible');
+        }
+      }
+
+      if ('IntersectionObserver' in window) {
+        var io = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('is-visible');
+              io.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.01, rootMargin: '0px 0px 200px 0px' });
+        revealEls.forEach(function (el) { io.observe(el); });
+      }
+
+      // Safety net: guarantees reveal regardless of scroll speed/method or IO edge cases.
+      var ticking = false;
+      function checkAll() {
+        revealEls.forEach(revealIfVisible);
+        ticking = false;
+      }
+      function onScroll() {
+        if (!ticking) {
+          ticking = true;
+          requestAnimationFrame(checkAll);
+        }
+      }
+      window.addEventListener('scroll', onScroll, { passive: true });
+      window.addEventListener('resize', onScroll);
+      checkAll();
+    })();
+  </script>
 </body>
 </html>
