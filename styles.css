@@ -72,6 +72,15 @@ img {
   100% { transform: scale(2.6);  opacity: 0; }
 }
 
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.reveal {
+  animation: fadeInUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
 /* ============ Layout helpers ============ */
 .wrap {
   max-width: 1220px;
@@ -165,6 +174,15 @@ img {
 .btn:hover {
   opacity: 0.94;
   transform: translateY(-2px);
+}
+
+.btn__arrow {
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.btn:hover .btn__arrow {
+  transform: translateX(-4px);
 }
 
 .btn--white {
@@ -589,7 +607,19 @@ img {
   border: 1px solid rgba(47,211,216,0.25);
 }
 
-.status-pill--live .dot { background: var(--turquoise); }
+.status-pill--live .dot {
+  position: relative;
+  background: var(--turquoise);
+}
+
+.status-pill--live .dot::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 1.5px solid var(--turquoise);
+  animation: lahPulse 2.6s ease-out infinite;
+}
 
 .status-pill--dev {
   color: var(--indigo);
@@ -693,10 +723,26 @@ img {
 
 /* ============ What we do ============ */
 .what {
+  position: relative;
+  overflow: hidden;
   background: var(--ink);
 }
 
+.what::before {
+  content: "";
+  position: absolute;
+  top: -180px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 900px;
+  height: 500px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(91,84,232,0.07), transparent 70%);
+  pointer-events: none;
+}
+
 .what .wrap {
+  position: relative;
   padding-block: 100px;
 }
 
@@ -732,8 +778,8 @@ img {
   margin-bottom: 22px;
 }
 
-.feature-card__dot--turquoise { background: var(--turquoise); }
-.feature-card__dot--indigo { background: var(--indigo); }
+.feature-card__dot--turquoise { background: var(--turquoise); box-shadow: 0 0 0 5px rgba(14,156,160,0.14); }
+.feature-card__dot--indigo { background: var(--indigo); box-shadow: 0 0 0 5px rgba(91,84,232,0.14); }
 
 .feature-card__dots {
   display: flex;
@@ -770,10 +816,25 @@ img {
 
 /* ============ Model ============ */
 .model {
+  position: relative;
+  overflow: hidden;
   background: var(--ink-2);
 }
 
+.model::before {
+  content: "";
+  position: absolute;
+  top: -220px;
+  right: -220px;
+  width: 640px;
+  height: 640px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(14,156,160,0.08), transparent 66%);
+  pointer-events: none;
+}
+
 .model .wrap {
+  position: relative;
   padding-block: 100px;
   display: grid;
   grid-template-columns: 0.9fr 1.1fr;
@@ -989,8 +1050,20 @@ img {
 
 /* ============ Footer ============ */
 .site-footer {
+  position: relative;
   background: var(--ink);
   border-top: 1px solid var(--border-1);
+}
+
+.site-footer::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--turquoise), var(--indigo), transparent);
+  opacity: 0.5;
 }
 
 .site-footer .wrap {
